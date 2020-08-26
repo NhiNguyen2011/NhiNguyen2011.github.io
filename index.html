@@ -30,7 +30,7 @@
                   class="wiki-search-input"
                   id="wiki-search-input"
                 />
-                <button class="button btn btn-wiki">Search</button>
+                <button class="button btn btn-wiki">Suche</button>
               </form>
             </div>
           </div>
@@ -60,7 +60,7 @@
                     class="result-wiki-search-form-input"
                     id="result-wiki-search-form-input"
                   />
-                  <button class="btn result-btn-wiki">Search</button>
+                  <button class="btn result-btn-wiki">Suche</button>
                 </form>
               </div>
               <div class="one-third column">
@@ -594,9 +594,9 @@
 
     function showError(keyword) {
       $(".display-results").append(
-        "<div class='error'> <p>Your search <span class='keyword'>" +
+        "<div class='error'> <p>Es wurden keine mit deiner Suchanfrage <span class='keyword'>" +
           keyword +
-          "</span> did not match any documents.</p> <p>Suggestions:</p><li>Make sure that all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li></div> "
+          "</span> übereinstimmenden Dokumente gefunden.</p> <p>Vorschläge:</p><li>Achte darauf, dass alle Wörter richtig geschrieben sind.</li><li>Probiere es mit anderen Suchbegriffen.</li><li>Probiere es mit allgemeineren Suchbegriffen.</li></div> "
       );
     }
 
@@ -628,6 +628,6 @@
 
     $("h1").click(function(e) {
       window.location.reload();
-    })
+    });
   </script>
 </html>
