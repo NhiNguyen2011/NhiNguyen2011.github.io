@@ -541,7 +541,7 @@
             () => Math.random() - 0.5
           );
 
-          showResults(relevantAnswers.concat(irrelevantAnswers));
+          showResults(irrelevantAnswers.concat(relevantAnswers));
           break;
         }
       }
@@ -605,6 +605,7 @@
       $(".display-results").html("");
       var keyword = $(".result-wiki-search-form-input").val();
       document.getElementById("result-wiki-search-form-input").blur();
+
       ajax(keyword);
     });
 
@@ -620,6 +621,7 @@
         $(".wiki-search-input").val("");
         document.getElementById("result-wiki-search-form-input").blur();
         $(".display-results").html("");
+
         ajax(keyword);
       } else {
         alert("Enter a keyword into the search box");
